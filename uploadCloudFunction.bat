@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-1goy7xw317314fd9 --n quickstartFunctions --r --project "C:\Dev\planettime" --report_first --report
