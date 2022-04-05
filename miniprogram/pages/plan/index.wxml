@@ -1,4 +1,4 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="title">Index Page</view>
+  <view class="title">Plan Page</view>
 </view>
