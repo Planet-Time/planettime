@@ -1,4 +1,14 @@
 <!--index.wxml-->
 <view class="container">
   <view class="title">Plan Page</view>
+
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button bindtap="getUserProfile"> 获取头像昵称 </button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
 </view>
