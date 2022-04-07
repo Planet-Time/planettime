@@ -20,6 +20,7 @@ Page({
                 // 传递并使用 THREE 变量
                 var camera, scene, renderer;
                 var mesh;
+                let T0 = new Date();//上次时间
                 init();
                 animate();
                 function init() {
@@ -42,9 +43,12 @@ Page({
                     renderer.setSize(canvas.width, canvas.height);
                 }
                 function animate() {
+                    let T1 = new Date();//本次时间
+                    let t = T1 - T0;//时间差
+                    T0 = T1;//把本次时间赋值给上次时间
                     canvas.requestAnimationFrame(animate);
-                    mesh.rotation.x += 0.001;
-                    mesh.rotation.y += 0.001;
+                    mesh.rotateY(0.001 * t);
+                    mesh.rotateX(0.001 * t);
                     renderer.render(scene, camera);
                 }
             })
