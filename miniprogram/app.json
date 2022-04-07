@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/community/index",
-    "pages/plan/index"
+    "pages/plan/index",
+    "pages/debug/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -24,6 +25,9 @@
     }, {
       "pagePath": "pages/plan/index",
       "text": "Plan"
+    }, {
+      "pagePath": "pages/debug/index",
+      "text": "Debug"
     }]
   }
 }
