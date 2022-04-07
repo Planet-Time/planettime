@@ -30,7 +30,7 @@ Page({
                     var material = new THREE.MeshBasicMaterial({ color: 0x0000ff, });
                     mesh = new THREE.Mesh(geometry, material);
                     scene.add(mesh);
-                    renderer = new THREE.WebGLRenderer({ antialias: true });
+                    renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
                     renderer.setSize(canvas._width, canvas._height);
                     renderer.setPixelRatio(wx.getSystemInfoSync().pixelRatio);
                     // renderer.setClearColor('rgb(135,206,250)', 1.0);
