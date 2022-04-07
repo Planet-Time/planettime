@@ -1,4 +1,4 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="title">Community Page</view>
+    <view class="title">Community Page</view>
 </view>

@@ -1,33 +1,36 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/community/index",
-    "pages/plan/index",
-    "pages/debug/index"
-  ],
-  "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationStyle": "custom",
-    "navigationBarTitleText": "PlanetTime 时间星球",
-    "navigationBarTextStyle": "black"
-  },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2",
-  "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "Index"
-    }, {
-      "pagePath": "pages/community/index",
-      "text": "Community"
-    }, {
-      "pagePath": "pages/plan/index",
-      "text": "Plan"
-    }, {
-      "pagePath": "pages/debug/index",
-      "text": "Debug"
-    }]
-  }
+    "pages": [
+        "pages/index/index",
+        "pages/community/index",
+        "pages/plan/index",
+        "pages/debug/index"
+    ],
+    "window": {
+        "navigationStyle": "custom",
+        "backgroundColorTop": "#1296db",
+        "navigationBarBackgroundColor": "#1296db",
+        "navigationBarTitleText": "PlanetTime 时间星球"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2",
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "Index"
+            },
+            {
+                "pagePath": "pages/community/index",
+                "text": "Community"
+            },
+            {
+                "pagePath": "pages/plan/index",
+                "text": "Plan"
+            },
+            {
+                "pagePath": "pages/debug/index",
+                "text": "Debug"
+            }
+        ]
+    }
 }
