@@ -1,4 +1,4 @@
 <!--index.wxml-->
 <view class="container">
-    <canvas type="webgl" id="webgl" style="width: 100vw; height: 90vh;"></canvas>
+    <canvas type="webgl" id="webgl" bindtap="onPointerMove" style="width: 100vw; height: 90vh;"></canvas>
 </view>
