@@ -29,7 +29,6 @@ Page({
                 var r = 80;
                 var angle = 0.0;
                 let T0 = new Date();//上次时间
-                let k = 1;
                 init();
                 animate();
                 function init() {
@@ -88,10 +87,6 @@ Page({
                     // 计算物体和射线的焦点
                     const intersects = raycaster.intersectObjects(scene.children);
                     for (let i = 0; i < intersects.length; i++) {
-                        if (k == 1) {
-                            console.log(intersects);
-                            k = 0;
-                        }
                         intersects[i].object.material.color.set(0xff0000);
                         //console.log(intersects);
                     }
@@ -104,7 +99,6 @@ Page({
             })
     },
     onPointerMove(event) {
-        console.log(event);
         pointer.x = ((event.detail.x) / canvas._width) * 2.0 - 1;
         pointer.y = - ((event.detail.y - event.target.offsetTop) / canvas._height) * 2.0 + 1;
     }
