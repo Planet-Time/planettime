@@ -35,7 +35,15 @@ Page({
                     scene = new THREE.Scene();
                     var PlanetMash = new THREE.SphereGeometry(40, 40, 40); //行星
                     var SatelliteMash = new THREE.SphereGeometry(10, 40, 40);
-                    var PlanetMaterial = new THREE.MeshLambertMaterial({ color: 0x0000ff, });
+                    var bump = THREE.ImageUtils.loadTexture("./img/moonBump.jpg");
+                    var texture = THREE.ImageUtils.loadTexture("./img/moon.webp");
+                    //Create the same material than moon2 but with a map
+                    var PlanetMaterial = new THREE.MeshPhongMaterial({
+                        shininess: 30,
+                        map: texture,
+                        bumpMap: bump,
+                        bumpScale: 3,
+                    });
                     var SatelliteMaterial = new THREE.MeshLambertMaterial({ color: 0x0000ff, });
                     Planet = new THREE.Mesh(PlanetMash, PlanetMaterial);
                     Satellite[0] = new THREE.Mesh(SatelliteMash, SatelliteMaterial);
